@@ -1,0 +1,70 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 28,
+  "spacing": 2,
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["hyprland/window"],
+  "modules-right": [
+    "pulseaudio",
+    "cpu",
+    "memory",
+    "network",
+    "clock",
+  ],
+
+  "hyprland/workspaces": {
+    "disable-scroll": false,
+    "persistent_workspaces": {
+      "1": ["DP-2", "DP-3"],
+      "2": ["DP-2", "DP-3"],
+      "3": ["DP-2", "DP-3"],
+      "4": ["DP-2", "DP-3"],
+      "5": ["DP-2", "DP-3"],
+      "6": ["DP-2", "DP-3"],
+      "7": ["DP-2", "DP-3"],
+      "8": ["DP-2", "DP-3"],
+      "9": ["DP-2", "DP-3"],
+      "10": ["DP-2", "DP-3"]
+    }
+  },
+
+  "clock": {
+    "format": "{:%a %b %d  %H:%M}"
+  },
+
+  "pulseaudio": {
+    "format": "  {volume}%",
+    "format-muted": "  muted",
+    "scroll-step": 2
+  },
+
+  "cpu": {
+    "format": " {usage}%",
+    "max-length": 10
+  },
+
+  "memory": {
+    "format": " {used:0.1f}G",
+    "max-length": 10
+  },
+
+  "network": {
+    "format-wifi": "  {essid}",
+    "format-ethernet": "󰈀  wired",
+    "format-disconnected": "󰖪  no net"
+  },
+
+  "hyprland/workspaces": {
+    "on-click": "hyprctl dispatch workspace {id}",
+    "active-only": false,
+    "format": "{name}",
+    "disable-scroll": true
+  },
+
+  "hyprland/window": {
+    "format": "{}",
+    "max-length": 80,
+    "separate-outputs": false
+  },
+}

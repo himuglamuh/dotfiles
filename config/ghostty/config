@@ -1,0 +1,19 @@
+window-decoration = false
+gtk-titlebar = false
+gtk-wide-tabs = false
+
+window-theme = ghostty
+font-family = "JetBrains Mono"
+font-size = 14
+
+background-opacity = 0.9
+background-blur = true
+background-blur-radius = 20
+
+scrollback-limit = 10000
+mouse-scroll-multiplier = 2
+
+shell-integration = "zsh"
+initial-command = "tmux attach || tmux new -s main"
+
+confirm-close-surface = false

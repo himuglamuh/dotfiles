@@ -1,1 +1,1 @@
-# dotfiles
+arch dotfiles, somewhat maintained

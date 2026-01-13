@@ -1,0 +1,51 @@
+/* =========================
+ *  Arch Feral Theme – Wofi
+ * ========================= */
+
+/* Palette reminders:
+ *  bg-dark:   #0B1114
+ *  fg-main:   #C8D0D3
+ *  cyan:      #4DD6FF
+ *  cyan-soft: #5CEFFF
+ *  violet:    #7F5CFF
+ */
+
+window {
+    margin: 0px;
+    padding: 12px;
+    background-color: rgba(11, 17, 20, 0.92); /* deep obsidian */
+    border-radius: 12px;
+    border: 1px solid rgba(77, 214, 255, 0.35); /* soft cyan edge */
+}
+
+#input {
+    margin: 8px 4px 12px 4px;
+    padding: 10px 14px;
+    border: none;
+    color: #C8D0D3;
+    background-color: rgba(5, 10, 12, 0.75);
+    border-radius: 8px;
+    outline: 1px solid rgba(77, 214, 255, 0.25); /* subtle cyan glow */
+}
+
+#input:focus {
+    outline: 1px solid rgba(92, 239, 255, 0.65);
+    color: #4DD6FF;
+}
+
+#entry {
+    padding: 10px 14px;
+    color: #C8D0D3;
+    background-color: rgba(11, 17, 20, 0.60);
+    border-radius: 6px;
+}
+
+#entry:selected {
+    background-color: rgba(77, 214, 255, 0.22); /* icy highlight */
+    color: #0B1114; /* reverse contrast for pop */
+    border: 1px solid rgba(92, 239, 255, 0.65);
+}
+
+#entry:hover {
+    background-color: rgba(77, 214, 255, 0.15);
+}

@@ -1,0 +1,117 @@
+* {
+  font: "JetBrainsMono Nerd Font 12";
+
+  // Core colors – Arch Cryo
+  background:               #0B1114;        // deep obsidian
+  background-alt:           #111920;        // slightly lighter variant
+  foreground:               #C8D0D3;        // soft cool grey
+  selected:                 #4DD6FF;        // glacial cyan
+  border-color:             #5CEFFF;        // brighter cyan edge
+  border-radius:            6px;
+
+  // Prevent light tones from leaking in
+  lightbg:                  #0B1114;
+  lightfg:                  #C8D0D3;
+
+  selected-normal-background: @selected;
+  selected-normal-foreground: #0B1114;
+  alternate-normal-background: @background-alt;
+  alternate-normal-foreground: @foreground;
+
+  spacing: 5px;
+  padding: 10px 15px;
+}
+
+window {
+  background-color: @background;
+  border: 2px;
+  border-color: @border-color;
+  border-radius: @border-radius;
+}
+
+mainbox {
+  background-color: @background;
+  padding: 10px;
+  spacing: 10px;
+}
+
+listview {
+  lines: 10;
+  columns: 1;
+  spacing: 4px;
+  scrollbar: false;
+  fixed-height: true;
+  border: 0;
+}
+
+element {
+  padding: 5px 10px;
+  border-radius: 4px;
+  background-color: @background-alt;
+  text-color: @foreground;
+}
+
+element selected {
+  background-color: @selected;
+  text-color: #0B1114;
+}
+
+element selected.normal {
+  background-color: @selected;
+  text-color: #0B1114;
+}
+
+element alternate.normal {
+  background-color: @background-alt;
+  text-color: @foreground;
+}
+
+element selected.active {
+  background-color: @selected;
+  text-color: #0B1114;
+}
+
+element alternate.active {
+  background-color: @background-alt;
+  text-color: @foreground;
+}
+
+element alternate.urgent {
+  background-color: @background-alt;
+  text-color: @foreground;
+}
+
+element selected.urgent {
+  background-color: @selected;
+  text-color: #0B1114;
+}
+
+entry {
+  padding: 8px 12px;
+  background-color: #101820;
+  text-color: @foreground;
+  placeholder-color: #6F8590;  // muted cool hint
+  border-radius: 4px;
+}
+
+prompt {
+  text-color: #7F5CFF;         // violet accent for a tiny bit of chaos
+}
+
+textbox {
+  text-color: @foreground;
+}
+
+scrollbar {
+  width: 4px;
+  handle-width: 8px;
+  handle-color: @foreground;
+  border: 0;
+}
+
+colors {
+  background: @background;
+  background-alt: @background-alt;
+  foreground: @foreground;
+  highlight: @selected;
+}

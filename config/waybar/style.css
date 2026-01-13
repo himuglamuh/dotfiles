@@ -1,0 +1,101 @@
+/* =========================
+ *  Arch Feral Theme – Waybar
+ * ========================= */
+
+/* Palette (for your brain, not GTK):
+ *  bg-dark:   #0B1114
+ *  fg-main:   #C8D0D3
+ *  cyan:      #4DD6FF
+ *  cyan-soft: #5CEFFF
+ *  violet:    #7F5CFF
+ *  danger:    #FF5C5C
+ */
+
+* {
+    font-family: "JetBrainsMono Nerd Font", "Noto Sans", sans-serif;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: rgba(11, 17, 20, 0.85); /* deep obsidian */
+    border-bottom: 1px solid rgba(77, 214, 255, 0.45); /* cyan glow */
+    color: #C8D0D3;
+
+    padding: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.55);
+}
+
+/* --- WORKSPACES --- */
+
+#workspaces button {
+    padding: 0 10px;
+    margin: 4px;
+    background: rgba(12, 22, 28, 0.9);
+    border-radius: 6px;
+    color: #C8D0D3;
+    border: 1px solid rgba(77, 214, 255, 0.35); /* soft cyan outline */
+    transition: all 0.15s ease-in-out;
+}
+
+#workspaces button:hover {
+    background: rgba(77, 214, 255, 0.16); /* hover glow */
+    color: #E5EDF0;
+}
+
+#workspaces button.active {
+    background: rgba(77, 214, 255, 0.26); /* stronger cyan pill */
+    border-color: rgba(92, 239, 255, 0.80); /* bright cyan edge */
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+/* --- WINDOW TITLE --- */
+
+#window {
+    padding: 4px 14px;
+    margin: 4px;
+    border-radius: 6px;
+    background: rgba(5, 10, 12, 0.75);
+    color: #4DD6FF; /* cyan title */
+    font-weight: 500;
+    border: 1px solid rgba(77, 214, 255, 0.30);
+}
+
+/* --- MODULE BASE STYLE --- */
+
+#cpu, #memory, #network, #bluetooth, #pulseaudio, #clock, #tray {
+    padding: 4px 5px;
+    margin: 4px 4px;
+    border-radius: 6px;
+    border: 1px solid rgba(200, 208, 211, 0.25); /* soft grey border */
+    background: rgba(5, 10, 12, 0.75);
+    color: #C8D0D3;
+}
+
+/* --- SPECIFIC HIGHLIGHTS --- */
+
+#network.connected {
+    color: #4DD6FF; /* cyan = online */
+    font-weight: 500;
+}
+
+#bluetooth.connected {
+    color: #4DD6FF;
+}
+
+#pulseaudio {
+    color: #C8D0D3;
+}
+
+#pulseaudio.muted {
+    color: #FF5C5C; /* keep red for “you fucked the sound” */
+}
+
+/* Clock – small pop without going full gamer */
+
+#clock {
+    color: #FE9900;         /* violet accent */
+    font-weight: 600;
+    border-color: rgba(254, 153, 0, 0.60);
+}

@@ -1,0 +1,56 @@
+{
+ "logo": {
+    "type": "chafa",
+    "source": "/home/lamuh/.config/fastfetch/avatar.jpg",
+    "height": 18,
+    "padding": { "left": 1, "right": 2 }
+  },
+  "modules": [
+    "title",
+    { "type": "custom", "format": "  \u001b[1m\u001b[38;2;204;85;0m≡ SYSTEM ID\u001b[0m" },
+    {"type": "custom", "key": "OS", "format": "{#4}Arch Linux{#0} (with a pinch of {#2}Cachy{#0})" },
+    {"type": "custom", "key": "Host", "format": "{#3}'one step above toaster'{#0}" },
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    { "type": "initSystem" },
+    { "type": "custom", "format": "  \u001b[1m\u001b[38;2;204;85;0m≡ THERMALS & DELUSION\u001b[0m" },
+    { "type": "custom", "key": "CPU Discipline", "format": "{#2}caffeinated{#0} / {#1}distracted{#0}" },
+    { "type": "custom", "key": "GPU Reality", "format": "{#3}integrated{#0} (self-esteem: {#1}external{#0})" },
+    { "type": "custom", "key": "Thermal Strategy", "format": "ignore until throttling" },
+    { "type": "custom", "key": "Fan Curve", "format": "vibes-based" },
+    { "type": "custom", "format": "  \u001b[1m\u001b[38;2;204;85;0m≡ WINDOW MANAGER LITURGY\u001b[0m" },
+    "wm",
+    "terminal",
+    { "type": "custom", "key": "Hyprland Mood",  "format": "{#2}aggressively smooth{#0} / {#1}mildly cursed{#0}" },
+    { "type": "custom", "key": "Wayland Oaths", "format": "sworn (X11 forgiven, not forgotten)" },
+    {
+      "type": "command",
+      "key": "Hyprland Clients",
+      "text": "sh -lc \"hyprctl clients -j 2>/dev/null | grep 'address' | wc -l\""
+    },
+    { "type": "custom", "key": "Theme", "format": "Adwaita-dark (corporate goth)" },
+    { "type": "custom", "format": "  \u001b[1m\u001b[38;2;204;85;0m≡ CONSEQUENCES\u001b[0m" },
+    { "type": "custom", "key": "Backup Confidence", "format": "{#1}theoretical{#0}" },
+    { "type": "custom", "key": "Btrfs Snapshots", "format": "trust issues incarnate" },
+    { "type": "custom", "key": "System Mood", "format": "stable {#2}but single tear rolling down cheek{#0}" },
+    { "type": "custom", "key": "Responsiveness", "format": "pretty good actually" },
+{
+  "type": "command",
+  "key": "Git Dirt",
+  "text": "sh -lc 'base=\"$HOME/git\"; n=$(find \"$base\" -maxdepth 3 -type d -name .git 2>/dev/null | wc -l); echo \"$n (contained for now)\"'"
+},
+    { "type": "custom", "key": "Ricer Status",   "format": "{#3}weaponized{#0}" },
+    { "type": "custom", "key": "Entropy Index", "format":"HIGH (stability: somehow fine)" },
+    { "type": "custom", "key": "AUR Temptation", "format": "{#1}uncomfortably high{#0}" },
+    { "type": "command",
+      "key": "Electron Count",
+      "text": "sh -lc \"ps -eo comm= | grep -E 'edge|electron|code|teams|slack|chrome' -i | wc -l | tr -d ' '\""
+    },
+    { "type": "command",
+      "key": "Dotfiles Gravity",
+      "text": "sh -lc \"test -d ~/.config && echo $(( ( $(find ~/.config -maxdepth 2 -type f 2>/dev/null | wc -l) ) / 10 ))\""
+    },
+  ]
+}
