@@ -1,1 +1,14 @@
+cheese
+clutter
+clutter-gst
+clutter-gtk
+cogl
+libcheese
+makemkv
 microsoft-edge-stable-bin
+minimodem
+pngcheck
+ruby-iostruct
+ruby-zpng
+steghide
+zsteg
